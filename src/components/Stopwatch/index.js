@@ -33,12 +33,10 @@ class Stopwatch extends Component {
       minutes.toString().length === 1 ? `0${minutes}` : minutes
     const stringifiedSecond =
       seconds.toString().length === 1 ? `0${seconds}` : seconds
-    console.log(stringifiedMinute)
+    return `${stringifiedMinute}:${stringifiedSecond}`
   }
 
   render() {
-    const {minutes, seconds} = this.state
-    this.stringifiedTime()
     return (
       <div className="bg-container">
         <h1>Stopwatch</h1>
@@ -51,9 +49,7 @@ class Stopwatch extends Component {
             />
             <p>Timer</p>
           </div>
-          <p className="timer">
-            {stringifiedMinute}:{stringifiedSecond}
-          </p>
+          <h1 className="timer">{this.stringifiedTime()}</h1>
           <div className="container-btn">
             <button type="button" onClick={this.onStart} className="start-btn">
               Start
