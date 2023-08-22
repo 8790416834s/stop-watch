@@ -1,0 +1,30 @@
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  width: 300px;
+  height: 200px;
+}
+.timer-img {
+  height: 25px;
+  width: 25px;
+  margin-top: 12px;
+  margin-right: 5px;
+}
+.timer {
+  font-size: 32px;
+}
+.heading-container {
+  display: flex;
+}
